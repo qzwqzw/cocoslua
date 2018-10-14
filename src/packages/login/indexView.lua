@@ -6,11 +6,24 @@ local MAX_ROW,SUB_PANEL_HEIGHT = 10,60
 
 local graphic = require ("utils.graphic")
 function meta:ctor()
-    self:registEventFun()
     local anim = self:getChild("DemoPlayer")
     self:getChild("btn","txt"):setString("ggggggggggggggggggggggg")
 
     self.listView = self:getChild("ListView")
+    self:setScorllView()
+    self:registEventFun()
+end
+
+function meta:setScorllView( ... )
+    local scrollView = self:getChild("ScrollView")
+    scrollView:removeAllChildren()
+    self.hon_list_view_node = require("basic.refine_list_view").new(scrollView)
+
+    self.hon_list_view_node:Init(MAX_ROW, SUB_PANEL_HEIGHT, function ()
+        local new_record = require("login.item.indexItem").create().box
+        new_record:removeSelf(true)
+        return new_record
+    end)
 
 end
 
@@ -40,10 +53,21 @@ function meta:Show(args1,args2)
 
         --  self.listView:upList(arr)
          -- self:initUI(7)
+         local list = {}
+        for i = 1 , 5 do
+            table.insert(list,i)
+        end
+        self:upListScorview(list)
     end,5)
 
+    local list = {}
+    for i = 1 , 100 do
+        table.insert(list,i)
+    end
+
+    self:upListScorview(list)
+
     self:initUI(50)
-    self:setScorllView()
 end
 
 function meta:initUI(num )
@@ -74,21 +98,9 @@ function meta:setItem( item, v )
     item:getChild("txt"):setString(v)
 end
 
-function meta:setScorllView( ... )
+function meta:upListScorview( list )
     local scrollView = self:getChild("ScrollView")
-    self.hon_list_view_node = require("basic.refine_list_view").new(scrollView)
-
-    self.hon_list_view_node:Init(MAX_ROW, SUB_PANEL_HEIGHT, function ()
-        local new_record = require("login.item.indexItem").create().box
-        new_record:removeSelf(true)
-        return new_record
-    end)
-
-    local list = {}
-    for i = 1 , 100 do
-        table.insert(list,i)
-    end
-    self.hon_list_view_node:Show( #list, function (cur_row, item_node)
+     self.hon_list_view_node:Show( #list, function (cur_row, item_node)
         local info = list[cur_row]
         self:setItems(cur_row,item_node)
         item_node:setPositionX(scrollView:getContentSize().width / 2)
@@ -99,7 +111,7 @@ function meta:setScorllView( ... )
 end
 
 function meta:setItems( cur_row,item_node )
-    print("cur_row")
+    print("cur_row",cur_row,tolua.type(item_node))
 end
 
 function meta:Hide()
