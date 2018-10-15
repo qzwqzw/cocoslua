@@ -1,0 +1,514 @@
+<Solution>
+  <PropertyGroup Name="NewCocosProject2" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="academy">
+          <Folder Name="bg">
+            <Image Name="1.png" />
+            <Image Name="1_1.png" />
+            <Image Name="10.png" />
+            <Image Name="11.png" />
+            <Image Name="12.png" />
+            <Image Name="1-2.png" />
+            <Image Name="13.png" />
+            <Image Name="14.png" />
+            <Image Name="15.png" />
+            <Image Name="16.png" />
+            <Image Name="17.png" />
+            <Image Name="19.jpg" />
+            <Image Name="2.jpg" />
+            <Image Name="2.png" />
+            <Image Name="20.jpg" />
+            <Image Name="21.png" />
+            <Image Name="21-1.png" />
+            <Image Name="22.png" />
+            <Image Name="22-1.png" />
+            <Image Name="23.jpg" />
+            <Image Name="24.jpg" />
+            <Image Name="3.png" />
+            <Image Name="4.jpg" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.jpg" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.jpg" />
+          </Folder>
+          <Folder Name="box">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+          </Folder>
+          <Folder Name="button">
+            <Image Name="1.png" />
+            <Image Name="10.png" />
+            <Image Name="10-1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+            <Image Name="button2.png" />
+            <Image Name="button4.png" />
+            <Image Name="help.png" />
+          </Folder>
+          <Folder Name="other">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="circle.png" />
+            <Image Name="levelup.png" />
+            <Image Name="stonetable.png" />
+          </Folder>
+          <Folder Name="role">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+          </Folder>
+          <Folder Name="tip">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="title">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+          </Folder>
+        </Folder>
+        <Folder Name="beijing">
+          <PlistImageFolder Image="guoqing-qiuqian0.png" PListFile="guoqing-qiuqian0.plist" Name=".guoqing-qiuqian0_PList.Dir">
+            <PlistImageFile Name="diandianlizi.png" Key="diandianlizi.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-1.png" Key="jieqian-faguang/jieqian-faguang-1.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-10.png" Key="jieqian-faguang/jieqian-faguang-10.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-11.png" Key="jieqian-faguang/jieqian-faguang-11.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-12.png" Key="jieqian-faguang/jieqian-faguang-12.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-13.png" Key="jieqian-faguang/jieqian-faguang-13.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-14.png" Key="jieqian-faguang/jieqian-faguang-14.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-15.png" Key="jieqian-faguang/jieqian-faguang-15.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-16.png" Key="jieqian-faguang/jieqian-faguang-16.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-17.png" Key="jieqian-faguang/jieqian-faguang-17.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-18.png" Key="jieqian-faguang/jieqian-faguang-18.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-19.png" Key="jieqian-faguang/jieqian-faguang-19.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-2.png" Key="jieqian-faguang/jieqian-faguang-2.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-20.png" Key="jieqian-faguang/jieqian-faguang-20.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-21.png" Key="jieqian-faguang/jieqian-faguang-21.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-22.png" Key="jieqian-faguang/jieqian-faguang-22.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-23.png" Key="jieqian-faguang/jieqian-faguang-23.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-24.png" Key="jieqian-faguang/jieqian-faguang-24.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-25.png" Key="jieqian-faguang/jieqian-faguang-25.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-3.png" Key="jieqian-faguang/jieqian-faguang-3.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-4.png" Key="jieqian-faguang/jieqian-faguang-4.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-5.png" Key="jieqian-faguang/jieqian-faguang-5.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-6.png" Key="jieqian-faguang/jieqian-faguang-6.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-7.png" Key="jieqian-faguang/jieqian-faguang-7.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-8.png" Key="jieqian-faguang/jieqian-faguang-8.png" />
+            <PlistImageFile Name="jieqian-faguang_jieqian-faguang-9.png" Key="jieqian-faguang/jieqian-faguang-9.png" />
+            <PlistImageFile Name="zhuqian_zhuqian-fy.png" Key="zhuqian/zhuqian-fy.png" />
+            <PlistImageFile Name="zhuqian_zhuqian-gy.png" Key="zhuqian/zhuqian-gy.png" />
+            <PlistImageFile Name="zhuqian_zhuqian-wl.png" Key="zhuqian/zhuqian-wl.png" />
+            <PlistImageFile Name="zhuqian_zhuqian-xs.png" Key="zhuqian/zhuqian-xs.png" />
+            <PlistImageFile Name="zhuqian_zhuqian-zf.png" Key="zhuqian/zhuqian-zf.png" />
+            <PlistImageFile Name="zhuqian_zhuqian-zl.png" Key="zhuqian/zhuqian-zl.png" />
+            <PlistImageFile Name="zhuqian_zhuqian-zs.png" Key="zhuqian/zhuqian-zs.png" />
+            <PlistImageFile Name="zhuqian-faguang.png" Key="zhuqian-faguang.png" />
+            <PlistImageFile Name="zhuqian-liangguang.png" Key="zhuqian-liangguang.png" />
+            <PlistImageFile Name="zhutong.png" Key="zhutong.png" />
+            <PlistImageFile Name="zhutong-beimian.png" Key="zhutong-beimian.png" />
+          </PlistImageFolder>
+          <Folder Name="head">
+            <Image Name="bg1.png" />
+            <Image Name="bgMask.png" />
+            <Image Name="bgMask2.png" />
+          </Folder>
+          <Folder Name="home">
+            <Image Name="beijing1.png" />
+            <Image Name="beijing2.jpg" />
+            <Image Name="beijing6.jpg" />
+            <Image Name="sk2bg1.png" />
+            <Image Name="sk2bg2.png" />
+            <Image Name="sk2ex1.png" />
+            <Image Name="sk2ex2.jpg" />
+            <Image Name="sk2ex3.jpg" />
+            <Image Name="sk2ex4.png" />
+            <Image Name="sk2ex5.png" />
+            <Image Name="sky.jpg" />
+          </Folder>
+          <Folder Name="light">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="4.png" />
+          </Folder>
+          <Folder Name="shiye">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+          </Folder>
+          <Folder Name="tribunal">
+            <Image Name="tribunal1.jpg" />
+            <Image Name="tribunal10.jpg" />
+            <Image Name="tribunal11.png" />
+            <Image Name="tribunal2.png" />
+            <Image Name="tribunal6.png" />
+          </Folder>
+          <Image Name="accu_day_item2.png" />
+          <Image Name="beijing.png" />
+          <Image Name="beijing015.png" />
+          <Image Name="beijing016.png" />
+          <Image Name="beijing017.png" />
+          <Image Name="beijing09.png" />
+          <Image Name="beijing10.jpg" />
+          <Image Name="beijing101.png" />
+          <Image Name="beijing102.jpg" />
+          <Image Name="beijing103.jpg" />
+          <Image Name="beijing104.jpg" />
+          <Image Name="beijing108.png" />
+          <Image Name="beijing110.jpg" />
+          <Image Name="beijing111.jpg" />
+          <Image Name="beijing112.jpg" />
+          <Image Name="beijing112.png" />
+          <Image Name="beijing112_1.png" />
+          <Image Name="beijing115.jpg" />
+          <Image Name="beijing116.jpg" />
+          <Image Name="beijing117.jpg" />
+          <Image Name="beijing119.jpg" />
+          <Image Name="beijing120.png" />
+          <Image Name="beijing121.png" />
+          <Image Name="beijing122.png" />
+          <Image Name="beijing123.png" />
+          <Image Name="beijing124.png" />
+          <Image Name="beijing125.png" />
+          <Image Name="beijing126.png" />
+          <Image Name="beijing126_1.png" />
+          <Image Name="beijing127.png" />
+          <Image Name="beijing129.png" />
+          <Image Name="beijing13.jpg" />
+          <Image Name="beijing130.png" />
+          <Image Name="beijing131.png" />
+          <Image Name="beijing132.png" />
+          <Image Name="beijing133.png" />
+          <Image Name="beijing134.png" />
+          <Image Name="beijing135.png" />
+          <Image Name="beijing136.png" />
+          <Image Name="beijing138.png" />
+          <Image Name="beijing139.jpg" />
+          <Image Name="beijing14.png" />
+          <Image Name="beijing140.png" />
+          <Image Name="beijing141.png" />
+          <Image Name="beijing142.png" />
+          <Image Name="beijing143.png" />
+          <Image Name="beijing150.png" />
+          <Image Name="beijing151.png" />
+          <Image Name="beijing154.png" />
+          <Image Name="beijing155.jpg" />
+          <Image Name="beijing157.png" />
+          <Image Name="beijing158.png" />
+          <Image Name="beijing16.jpg" />
+          <Image Name="beijing162.png" />
+          <Image Name="beijing163_1.png" />
+          <Image Name="beijing165.png" />
+          <Image Name="beijing165_1.png" />
+          <Image Name="beijing167.jpg" />
+          <Image Name="beijing168.png" />
+          <Image Name="beijing17.png" />
+          <Image Name="beijing171.png" />
+          <Image Name="beijing173.png" />
+          <Image Name="beijing174.png" />
+          <Image Name="beijing177.jpg" />
+          <Image Name="beijing18.png" />
+          <Image Name="beijing187.png" />
+          <Image Name="beijing187_1.png" />
+          <Image Name="beijing191.png" />
+          <Image Name="beijing192.png" />
+          <Image Name="beijing193.png" />
+          <Image Name="beijing195.png" />
+          <Image Name="beijing196.png" />
+          <Image Name="beijing196_1.png" />
+          <Image Name="beijing197.png" />
+          <Image Name="beijing197_1.png" />
+          <Image Name="beijing2.png" />
+          <Image Name="beijing20.jpg" />
+          <Image Name="beijing203.png" />
+          <Image Name="beijing205.png" />
+          <Image Name="beijing207.png" />
+          <Image Name="beijing207_1.png" />
+          <Image Name="beijing208.png" />
+          <Image Name="beijing209.jpg" />
+          <Image Name="beijing209.png" />
+          <Image Name="beijing210.png" />
+          <Image Name="beijing211.png" />
+          <Image Name="beijing214.png" />
+          <Image Name="beijing217.png" />
+          <Image Name="beijing218.png" />
+          <Image Name="beijing219.png" />
+          <Image Name="beijing22.png" />
+          <Image Name="beijing222.png" />
+          <Image Name="beijing223.png" />
+          <Image Name="beijing224.png" />
+          <Image Name="beijing226.jpg" />
+          <Image Name="beijing226_1.jpg" />
+          <Image Name="beijing227.png" />
+          <Image Name="beijing230.png" />
+          <Image Name="beijing232.png" />
+          <Image Name="beijing233.png" />
+          <Image Name="beijing234.png" />
+          <Image Name="beijing236.png" />
+          <Image Name="beijing237.png" />
+          <Image Name="beijing239.png" />
+          <Image Name="beijing239_1.png" />
+          <Image Name="beijing24.png" />
+          <Image Name="beijing240.png" />
+          <Image Name="beijing243.jpg" />
+          <Image Name="beijing244.png" />
+          <Image Name="beijing245.png" />
+          <Image Name="beijing247.png" />
+          <Image Name="beijing248.png" />
+          <Image Name="beijing249.jpg" />
+          <Image Name="beijing249.png" />
+          <Image Name="beijing250.png" />
+          <Image Name="beijing251.png" />
+          <Image Name="beijing252.png" />
+          <Image Name="beijing253.png" />
+          <Image Name="beijing254.png" />
+          <Image Name="beijing255.png" />
+          <Image Name="beijing256.jpg" />
+          <Image Name="beijing257.jpg" />
+          <Image Name="beijing259.jpg" />
+          <Image Name="beijing27.png" />
+          <Image Name="beijing28.png" />
+          <Image Name="beijing3.png" />
+          <Image Name="beijing30.png" />
+          <Image Name="beijing31.png" />
+          <Image Name="beijing32.jpg" />
+          <Image Name="beijing33.png" />
+          <Image Name="beijing34.jpg" />
+          <Image Name="beijing36.png" />
+          <Image Name="beijing37.png" />
+          <Image Name="beijing37_1.png" />
+          <Image Name="beijing37_2.png" />
+          <Image Name="beijing4.png" />
+          <Image Name="beijing41.png" />
+          <Image Name="beijing43.png" />
+          <Image Name="beijing44.png" />
+          <Image Name="beijing46.png" />
+          <Image Name="beijing47.png" />
+          <Image Name="beijing48.jpg" />
+          <Image Name="beijing49.png" />
+          <Image Name="beijing5.png" />
+          <Image Name="beijing50.jpg" />
+          <Image Name="beijing51.png" />
+          <Image Name="beijing55.png" />
+          <Image Name="beijing58.png" />
+          <Image Name="beijing59.png" />
+          <Image Name="beijing60.png" />
+          <Image Name="beijing62.png" />
+          <Image Name="beijing63.png" />
+          <Image Name="beijing64.png" />
+          <Image Name="beijing66.png" />
+          <Image Name="beijing7.png" />
+          <Image Name="beijing70.png" />
+          <Image Name="beijing71.jpg" />
+          <Image Name="beijing74.png" />
+          <Image Name="beijing76.png" />
+          <Image Name="beijing76_1.jpg" />
+          <Image Name="beijing76_1.png" />
+          <Image Name="beijing77.png" />
+          <Image Name="beijing78.jpg" />
+          <Image Name="beijing78_1.jpg" />
+          <Image Name="beijing79.jpg" />
+          <Image Name="beijing8.png" />
+          <Image Name="beijing82.jpg" />
+          <Image Name="beijing84.jpg" />
+          <Image Name="beijing85.jpg" />
+          <Image Name="beijing9.png" />
+          <Image Name="beijing9_1.png" />
+          <Image Name="beijing9_2.png" />
+          <Image Name="beijing9_3.png" />
+          <Image Name="beijing9_4.png" />
+          <Image Name="bg227.png" />
+          <Image Name="bg243.png" />
+          <Image Name="bg255.png" />
+          <Image Name="bg259.png" />
+          <Image Name="bg260.jpg" />
+          <Image Name="bg261.png" />
+          <Image Name="bg262.png" />
+          <Image Name="bg263.png" />
+          <Image Name="bg264.png" />
+          <Image Name="bg265.png" />
+          <Image Name="bg266.png" />
+          <Image Name="bg267.png" />
+          <Image Name="bg268.png" />
+          <Image Name="gongGao_close.png" />
+          <Image Name="gongGao_tag1.png" />
+          <Image Name="gongGao_tag2.png" />
+          <Image Name="gongGao_tag3.png" />
+          <Image Name="gongGao_tag4.png" />
+          <Image Name="hua.png" />
+          <Image Name="look_tex_1.jpg" />
+          <Image Name="look_tex_2.png" />
+          <Image Name="look_tex_3.jpg" />
+          <Image Name="look_tex_3.png" />
+          <Image Name="look_tex_4.png" />
+          <Image Name="look_tex_5.png" />
+          <Image Name="look_tex_6.png" />
+          <Image Name="runbg.png" />
+        </Folder>
+        <Folder Name="login">
+          <Project Name="index.csd" Type="Node" />
+          <Project Name="loginPanel.csd" Type="Node" />
+          <Folder Name="item">
+            <Project Name="indexItem.csd" Type="Node" />
+          </Folder>
+        </Folder>
+        <Folder Name="qixi">
+          <PlistImageFolder Image="heiyun0.png" PListFile="heiyun0.plist" Name=".heiyun0_PList.Dir">
+            <PlistImageFile Name="heiyun_heiyun-1.png" Key="heiyun/heiyun-1.png" />
+            <PlistImageFile Name="heiyun_heiyun-10.png" Key="heiyun/heiyun-10.png" />
+            <PlistImageFile Name="heiyun_heiyun-11.png" Key="heiyun/heiyun-11.png" />
+            <PlistImageFile Name="heiyun_heiyun-12.png" Key="heiyun/heiyun-12.png" />
+            <PlistImageFile Name="heiyun_heiyun-13.png" Key="heiyun/heiyun-13.png" />
+            <PlistImageFile Name="heiyun_heiyun-14.png" Key="heiyun/heiyun-14.png" />
+            <PlistImageFile Name="heiyun_heiyun-15.png" Key="heiyun/heiyun-15.png" />
+            <PlistImageFile Name="heiyun_heiyun-16.png" Key="heiyun/heiyun-16.png" />
+            <PlistImageFile Name="heiyun_heiyun-17.png" Key="heiyun/heiyun-17.png" />
+            <PlistImageFile Name="heiyun_heiyun-18.png" Key="heiyun/heiyun-18.png" />
+            <PlistImageFile Name="heiyun_heiyun-19.png" Key="heiyun/heiyun-19.png" />
+            <PlistImageFile Name="heiyun_heiyun-2.png" Key="heiyun/heiyun-2.png" />
+            <PlistImageFile Name="heiyun_heiyun-20.png" Key="heiyun/heiyun-20.png" />
+            <PlistImageFile Name="heiyun_heiyun-21.png" Key="heiyun/heiyun-21.png" />
+            <PlistImageFile Name="heiyun_heiyun-22.png" Key="heiyun/heiyun-22.png" />
+            <PlistImageFile Name="heiyun_heiyun-23.png" Key="heiyun/heiyun-23.png" />
+            <PlistImageFile Name="heiyun_heiyun-24.png" Key="heiyun/heiyun-24.png" />
+            <PlistImageFile Name="heiyun_heiyun-25.png" Key="heiyun/heiyun-25.png" />
+            <PlistImageFile Name="heiyun_heiyun-26.png" Key="heiyun/heiyun-26.png" />
+            <PlistImageFile Name="heiyun_heiyun-27.png" Key="heiyun/heiyun-27.png" />
+            <PlistImageFile Name="heiyun_heiyun-28.png" Key="heiyun/heiyun-28.png" />
+            <PlistImageFile Name="heiyun_heiyun-29.png" Key="heiyun/heiyun-29.png" />
+            <PlistImageFile Name="heiyun_heiyun-3.png" Key="heiyun/heiyun-3.png" />
+            <PlistImageFile Name="heiyun_heiyun-30.png" Key="heiyun/heiyun-30.png" />
+            <PlistImageFile Name="heiyun_heiyun-31.png" Key="heiyun/heiyun-31.png" />
+            <PlistImageFile Name="heiyun_heiyun-32.png" Key="heiyun/heiyun-32.png" />
+            <PlistImageFile Name="heiyun_heiyun-33.png" Key="heiyun/heiyun-33.png" />
+            <PlistImageFile Name="heiyun_heiyun-34.png" Key="heiyun/heiyun-34.png" />
+            <PlistImageFile Name="heiyun_heiyun-35.png" Key="heiyun/heiyun-35.png" />
+            <PlistImageFile Name="heiyun_heiyun-36.png" Key="heiyun/heiyun-36.png" />
+            <PlistImageFile Name="heiyun_heiyun-37.png" Key="heiyun/heiyun-37.png" />
+            <PlistImageFile Name="heiyun_heiyun-38.png" Key="heiyun/heiyun-38.png" />
+            <PlistImageFile Name="heiyun_heiyun-39.png" Key="heiyun/heiyun-39.png" />
+            <PlistImageFile Name="heiyun_heiyun-4.png" Key="heiyun/heiyun-4.png" />
+            <PlistImageFile Name="heiyun_heiyun-40.png" Key="heiyun/heiyun-40.png" />
+            <PlistImageFile Name="heiyun_heiyun-5.png" Key="heiyun/heiyun-5.png" />
+            <PlistImageFile Name="heiyun_heiyun-6.png" Key="heiyun/heiyun-6.png" />
+            <PlistImageFile Name="heiyun_heiyun-7.png" Key="heiyun/heiyun-7.png" />
+            <PlistImageFile Name="heiyun_heiyun-8.png" Key="heiyun/heiyun-8.png" />
+            <PlistImageFile Name="heiyun_heiyun-9.png" Key="heiyun/heiyun-9.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="laoye-qixi0.png" PListFile="laoye-qixi0.plist" Name=".laoye-qixi0_PList.Dir">
+            <PlistImageFile Name="huaguang.png" Key="huaguang.png" />
+            <PlistImageFile Name="hualizi.png" Key="hualizi.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-1.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-1.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-10.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-10.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-11.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-11.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-12.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-12.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-13.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-13.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-14.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-14.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-15.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-15.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-16.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-16.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-17.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-17.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-18.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-18.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-19.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-19.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-2.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-2.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-20.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-20.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-3.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-3.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-4.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-4.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-5.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-5.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-6.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-6.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-7.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-7.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-8.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-8.png" />
+            <PlistImageFile Name="laoye-qixi-caochongyinghuochong_laoye-qixi-caochongyinghuochong-9.png" Key="laoye-qixi-caochongyinghuochong/laoye-qixi-caochongyinghuochong-9.png" />
+            <PlistImageFile Name="laoye-qixi-huakaiguangtexiao_laoye-qixi-huakaiguangtexiao-1.png" Key="laoye-qixi-huakaiguangtexiao/laoye-qixi-huakaiguangtexiao-1.png" />
+            <PlistImageFile Name="laoye-qixi-huakaiguangtexiao_laoye-qixi-huakaiguangtexiao-10.png" Key="laoye-qixi-huakaiguangtexiao/laoye-qixi-huakaiguangtexiao-10.png" />
+            <PlistImageFile Name="laoye-qixi-huakaiguangtexiao_laoye-qixi-huakaiguangtexiao-12.png" Key="laoye-qixi-huakaiguangtexiao/laoye-qixi-huakaiguangtexiao-12.png" />
+            <PlistImageFile Name="laoye-qixi-huakaiguangtexiao_laoye-qixi-huakaiguangtexiao-14.png" Key="laoye-qixi-huakaiguangtexiao/laoye-qixi-huakaiguangtexiao-14.png" />
+            <PlistImageFile Name="laoye-qixi-huakaiguangtexiao_laoye-qixi-huakaiguangtexiao-2.png" Key="laoye-qixi-huakaiguangtexiao/laoye-qixi-huakaiguangtexiao-2.png" />
+            <PlistImageFile Name="laoye-qixi-huakaiguangtexiao_laoye-qixi-huakaiguangtexiao-4.png" Key="laoye-qixi-huakaiguangtexiao/laoye-qixi-huakaiguangtexiao-4.png" />
+            <PlistImageFile Name="laoye-qixi-huakaiguangtexiao_laoye-qixi-huakaiguangtexiao-6.png" Key="laoye-qixi-huakaiguangtexiao/laoye-qixi-huakaiguangtexiao-6.png" />
+            <PlistImageFile Name="laoye-qixi-huakaiguangtexiao_laoye-qixi-huakaiguangtexiao-8.png" Key="laoye-qixi-huakaiguangtexiao/laoye-qixi-huakaiguangtexiao-8.png" />
+            <PlistImageFile Name="laoye-qixi-lianhua_laoye-qixi-lianhua-1.png" Key="laoye-qixi-lianhua/laoye-qixi-lianhua-1.png" />
+            <PlistImageFile Name="laoye-qixi-lianhua_laoye-qixi-lianhua-2.png" Key="laoye-qixi-lianhua/laoye-qixi-lianhua-2.png" />
+            <PlistImageFile Name="laoye-qixi-lianhua_laoye-qixi-lianhua-3.png" Key="laoye-qixi-lianhua/laoye-qixi-lianhua-3.png" />
+            <PlistImageFile Name="laoye-qixi-lianhua_laoye-qixi-lianhua-4.png" Key="laoye-qixi-lianhua/laoye-qixi-lianhua-4.png" />
+            <PlistImageFile Name="laoye-qixi-lianhua_laoye-qixi-lianhua-5.png" Key="laoye-qixi-lianhua/laoye-qixi-lianhua-5.png" />
+            <PlistImageFile Name="laoye-qixi-lianhua_laoye-qixi-lianhua-6.png" Key="laoye-qixi-lianhua/laoye-qixi-lianhua-6.png" />
+            <PlistImageFile Name="laoye-qixi-lianhua_laoye-qixi-lianhua-7.png" Key="laoye-qixi-lianhua/laoye-qixi-lianhua-7.png" />
+            <PlistImageFile Name="laoye-qixi-shuiliu_laoye-qixi-shuiliu-1.png" Key="laoye-qixi-shuiliu/laoye-qixi-shuiliu-1.png" />
+            <PlistImageFile Name="laoye-qixi-shuiliu_laoye-qixi-shuiliu-2.png" Key="laoye-qixi-shuiliu/laoye-qixi-shuiliu-2.png" />
+            <PlistImageFile Name="laoye-qixi-shuiliu_laoye-qixi-shuiliu-3.png" Key="laoye-qixi-shuiliu/laoye-qixi-shuiliu-3.png" />
+            <PlistImageFile Name="laoye-qixi-shuiliu_laoye-qixi-shuiliu-4.png" Key="laoye-qixi-shuiliu/laoye-qixi-shuiliu-4.png" />
+            <PlistImageFile Name="laoye-qixi-shuiliu_laoye-qixi-shuiliu-5.png" Key="laoye-qixi-shuiliu/laoye-qixi-shuiliu-5.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-1.png" Key="laoye-qixi-xique/laoye-qixi-xique-1.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-10.png" Key="laoye-qixi-xique/laoye-qixi-xique-10.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-11.png" Key="laoye-qixi-xique/laoye-qixi-xique-11.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-12.png" Key="laoye-qixi-xique/laoye-qixi-xique-12.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-13.png" Key="laoye-qixi-xique/laoye-qixi-xique-13.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-14.png" Key="laoye-qixi-xique/laoye-qixi-xique-14.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-15.png" Key="laoye-qixi-xique/laoye-qixi-xique-15.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-16.png" Key="laoye-qixi-xique/laoye-qixi-xique-16.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-17.png" Key="laoye-qixi-xique/laoye-qixi-xique-17.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-18.png" Key="laoye-qixi-xique/laoye-qixi-xique-18.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-19.png" Key="laoye-qixi-xique/laoye-qixi-xique-19.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-2.png" Key="laoye-qixi-xique/laoye-qixi-xique-2.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-20.png" Key="laoye-qixi-xique/laoye-qixi-xique-20.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-21.png" Key="laoye-qixi-xique/laoye-qixi-xique-21.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-22.png" Key="laoye-qixi-xique/laoye-qixi-xique-22.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-23.png" Key="laoye-qixi-xique/laoye-qixi-xique-23.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-24.png" Key="laoye-qixi-xique/laoye-qixi-xique-24.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-25.png" Key="laoye-qixi-xique/laoye-qixi-xique-25.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-26.png" Key="laoye-qixi-xique/laoye-qixi-xique-26.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-27.png" Key="laoye-qixi-xique/laoye-qixi-xique-27.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-28.png" Key="laoye-qixi-xique/laoye-qixi-xique-28.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-29.png" Key="laoye-qixi-xique/laoye-qixi-xique-29.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-3.png" Key="laoye-qixi-xique/laoye-qixi-xique-3.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-30.png" Key="laoye-qixi-xique/laoye-qixi-xique-30.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-31.png" Key="laoye-qixi-xique/laoye-qixi-xique-31.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-32.png" Key="laoye-qixi-xique/laoye-qixi-xique-32.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-33.png" Key="laoye-qixi-xique/laoye-qixi-xique-33.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-34.png" Key="laoye-qixi-xique/laoye-qixi-xique-34.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-35.png" Key="laoye-qixi-xique/laoye-qixi-xique-35.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-4.png" Key="laoye-qixi-xique/laoye-qixi-xique-4.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-5.png" Key="laoye-qixi-xique/laoye-qixi-xique-5.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-6.png" Key="laoye-qixi-xique/laoye-qixi-xique-6.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-7.png" Key="laoye-qixi-xique/laoye-qixi-xique-7.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-8.png" Key="laoye-qixi-xique/laoye-qixi-xique-8.png" />
+            <PlistImageFile Name="laoye-qixi-xique_laoye-qixi-xique-9.png" Key="laoye-qixi-xique/laoye-qixi-xique-9.png" />
+            <PlistImageFile Name="xiaodenglongguang.png" Key="xiaodenglongguang.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="xingxing-huangse0.png" PListFile="xingxing-huangse0.plist" Name=".xingxing-huangse0_PList.Dir">
+            <PlistImageFile Name="huangse-xingxing.png" Key="huangse-xingxing.png" />
+          </PlistImageFolder>
+        </Folder>
+        <Image Name="HelloWorld.png" />
+        <Project Name="MainScene.csd" Type="Layer" />
+        <PlistParticleFile Name="particle_texture.plist" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
