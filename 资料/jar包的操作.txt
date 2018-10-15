@@ -1,0 +1,6 @@
+javac -encoding UTF-8 main.java // 编译
+
+ jar cvf xls2Lua.jar . //压缩jar包
+jar cvfm xls2Lua.jar META-INF/MANIFEST.MF . //压缩jar可执行包
+
+jar -xvf xls2Lua.jar //解压jar
