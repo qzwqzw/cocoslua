@@ -271,28 +271,7 @@
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="anim" ActionTag="63497298" Tag="33" IconVisible="True" LeftMargin="381.8437" RightMargin="-381.8437" TopMargin="-709.6705" BottomMargin="709.6705" IsLoop="True" IsAutoPlay="True" CurrentAnimationName="walk" ctype="ArmatureNodeObjectData">
-            <Size X="0.0000" Y="0.0000" />
-            <AnchorPoint />
-            <Position X="381.8437" Y="709.6705" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Default" Path="Default/DemoPlayer.ExportJson" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Particle_1" ActionTag="-328880491" Tag="154" IconVisible="True" LeftMargin="369.6906" RightMargin="-369.6906" TopMargin="-418.7083" BottomMargin="418.7083" ctype="ParticleObjectData">
-            <Size X="0.0000" Y="0.0000" />
-            <AnchorPoint />
-            <Position X="369.6906" Y="418.7083" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="particle_texture.plist" Plist="" />
-            <BlendFunc Src="774" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="ListView" ActionTag="-65614862" VisibleForFrame="False" Tag="636" IconVisible="False" LeftMargin="74.3802" RightMargin="-674.3802" TopMargin="-1126.6865" BottomMargin="726.6865" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
+          <AbstractNodeData Name="ListView" ActionTag="-65614862" VisibleForFrame="False" Tag="636" IconVisible="False" LeftMargin="74.3802" RightMargin="-674.3802" TopMargin="-1126.6865" BottomMargin="726.6865" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" DirectionType="Vertical" HorizontalType="Align_HorizontalCenter" ctype="ListViewObjectData">
             <Size X="600.0000" Y="400.0000" />
             <AnchorPoint />
             <Position X="74.3802" Y="726.6865" />
@@ -305,7 +284,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ScrollView" ActionTag="1544112540" Tag="644" IconVisible="False" LeftMargin="72.7453" RightMargin="-672.7454" TopMargin="-1090.7046" BottomMargin="690.7045" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" IsBounceEnabled="True" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
+          <AbstractNodeData Name="ScrollView" ActionTag="1544112540" Tag="644" IconVisible="False" LeftMargin="72.7453" RightMargin="-672.7453" TopMargin="-1090.7046" BottomMargin="690.7045" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
             <Size X="600.0000" Y="400.0000" />
             <AnchorPoint />
             <Position X="72.7453" Y="690.7045" />
@@ -318,6 +297,61 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
             <InnerNodeSize Width="600" Height="400" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Particle_1" ActionTag="-328880491" Tag="154" IconVisible="True" LeftMargin="369.6906" RightMargin="-369.6906" TopMargin="-418.7083" BottomMargin="418.7083" ctype="ParticleObjectData">
+            <Size X="0.0000" Y="0.0000" />
+            <AnchorPoint />
+            <Position X="369.6906" Y="418.7083" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="particle_texture.plist" Plist="" />
+            <BlendFunc Src="774" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="gradNode" ActionTag="941984146" Tag="33" IconVisible="False" LeftMargin="-106.5109" RightMargin="-853.4891" TopMargin="-926.1869" BottomMargin="286.1869" ctype="SpriteObjectData">
+            <Size X="960.0000" Y="640.0000" />
+            <Children>
+              <AbstractNodeData Name="anim" ActionTag="63497298" Tag="33" IconVisible="True" LeftMargin="450.2816" RightMargin="509.7184" TopMargin="337.0629" BottomMargin="302.9371" IsLoop="True" IsAutoPlay="True" CurrentAnimationName="walk" ctype="ArmatureNodeObjectData">
+                <Size X="0.0000" Y="0.0000" />
+                <AnchorPoint />
+                <Position X="450.2816" Y="302.9371" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.4690" Y="0.4733" />
+                <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Default" Path="Default/DemoPlayer.ExportJson" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_1" ActionTag="549624993" Tag="34" IconVisible="False" LeftMargin="423.6015" RightMargin="436.3985" TopMargin="486.7240" BottomMargin="133.2760" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="100.0000" Y="20.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="473.6015" Y="143.2760" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.4933" Y="0.2239" />
+                <PreSize X="0.1042" Y="0.0313" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="373.4891" Y="606.1869" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="HelloWorld.png" Plist="" />
+            <BlendFunc Src="770" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Map_1" ActionTag="460128623" Tag="35" IconVisible="False" LeftMargin="-640.5570" RightMargin="-1279.4430" TopMargin="-1067.5769" BottomMargin="107.5770" ctype="GameMapObjectData">
+            <Size X="1920.0000" Y="960.0000" />
+            <AnchorPoint />
+            <Position X="-640.5570" Y="107.5770" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="TileMaps/iso-test-zorder.tmx" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

@@ -361,6 +361,7 @@
           <Image Name="gongGao_tag2.png" />
           <Image Name="gongGao_tag3.png" />
           <Image Name="gongGao_tag4.png" />
+          <ExportJsonFile Name="guoqing-qiuqian.ExportJson" />
           <Image Name="hua.png" />
           <Image Name="look_tex_1.jpg" />
           <Image Name="look_tex_2.png" />
@@ -372,11 +373,11 @@
           <Image Name="runbg.png" />
         </Folder>
         <Folder Name="login">
-          <Project Name="index.csd" Type="Node" />
-          <Project Name="loginPanel.csd" Type="Node" />
           <Folder Name="item">
             <Project Name="indexItem.csd" Type="Node" />
           </Folder>
+          <Project Name="index.csd" Type="Node" />
+          <Project Name="loginPanel.csd" Type="Node" />
         </Folder>
         <Folder Name="qixi">
           <PlistImageFolder Image="heiyun0.png" PListFile="heiyun0.plist" Name=".heiyun0_PList.Dir">
@@ -504,6 +505,49 @@
           <PlistImageFolder Image="xingxing-huangse0.png" PListFile="xingxing-huangse0.plist" Name=".xingxing-huangse0_PList.Dir">
             <PlistImageFile Name="huangse-xingxing.png" Key="huangse-xingxing.png" />
           </PlistImageFolder>
+          <ExportJsonFile Name="heiyun.ExportJson" />
+          <ExportJsonFile Name="laoye-qixi.ExportJson" />
+          <ExportJsonFile Name="laoye-qixi-bilian.ExportJson" />
+          <ExportJsonFile Name="laoye-qixi-bilian-hua.ExportJson" />
+          <ExportJsonFile Name="laoye-qixi-juanzhou.ExportJson" />
+          <ExportJsonFile Name="laoye-qixi-lihe.ExportJson" />
+          <ExportJsonFile Name="laoye-shoujizhakai.ExportJson" />
+          <ExportJsonFile Name="laoye-zhitiaozhakai.ExportJson" />
+          <ExportJsonFile Name="xingxing-huangse.ExportJson" />
+          <ExportJsonFile Name="xingxing-lanlvse.ExportJson" />
+        </Folder>
+        <Folder Name="TileMaps">
+          <TmxFile Name="hexa-test.tmx" />
+          <TmxFile Name="iso-test.tmx" />
+          <TmxFile Name="iso-test1.tmx" />
+          <TmxFile Name="iso-test2.tmx" />
+          <TmxFile Name="iso-test2-uncompressed.tmx" />
+          <TmxFile Name="iso-test-bug787.tmx" />
+          <TmxFile Name="iso-test-movelayer.tmx" />
+          <TmxFile Name="iso-test-objectgroup.tmx" />
+          <TmxFile Name="iso-test-vertexz.tmx" />
+          <TmxFile Name="iso-test-zorder.tmx" />
+          <File Name="levelmap.tga" />
+          <TmxFile Name="orthogonal-test1.tmx" />
+          <TmxFile Name="orthogonal-test2.tmx" />
+          <TmxFile Name="orthogonal-test3.tmx" />
+          <TmxFile Name="orthogonal-test4.tmx" />
+          <TmxFile Name="orthogonal-test4-hd.tmx" />
+          <TmxFile Name="orthogonal-test5.tmx" />
+          <TmxFile Name="orthogonal-test6.tmx" />
+          <TmxFile Name="orthogonal-test6-hd.tmx" />
+          <TmxFile Name="orthogonal-test-movelayer.tmx" />
+          <TmxFile Name="orthogonal-test-vertexz.tmx" />
+          <TmxFile Name="orthogonal-test-zorder.tmx" />
+          <TmxFile Name="ortho-objects.tmx" />
+          <TmxFile Name="ortho-rotation-test.tmx" />
+          <TmxFile Name="ortho-tile-property.tmx" />
+          <TmxFile Name="test-object-layer.tmx" />
+          <TmxFile Name="test-staggered.tmx" />
+          <TmxFile Name="tile_iso_offset.tmx" />
+          <Image Name="tiles.png" />
+          <Image Name="tiles-hd.png" />
+          <TmxFile Name="xml-test.tmx" />
         </Folder>
         <Image Name="HelloWorld.png" />
         <Project Name="MainScene.csd" Type="Layer" />
