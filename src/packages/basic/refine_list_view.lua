@@ -225,4 +225,13 @@ function meta:SetContentSize(size)
     self:setContentSize(size)
 end
 
+function meta:updateItemData( )
+    for i,item in ipairs(self.sub_item_panel) do
+        local update_func = self.update_func
+        if update_func then
+            update_func(self.cur_row + i - 1, item)
+        end
+    end
+end
+
 return meta

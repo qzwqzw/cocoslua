@@ -63,14 +63,15 @@ function meta:Show(args1,args2)
     end,5)
 
     self.scheduleId = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function (...) --
-        local list = {}
-        for i = 1 , 200 do
-            table.insert(list,i)
+        self.list = {}
+        for i = 100 , 199 do
+            table.insert(self.list,i)
         end
+        dump(self.list)
         -- self.hon_list_view_node:CleanItemInfo()
         -- self.hon_list_view_node:RemoveAllItem()
         -- self:setScorllView()
-        self:upListScorview(list)
+        self:getChild("ScrollView"):updateItemData()
 
         if self.scheduleId then
             cc.Director:getInstance():getScheduler():unscheduleScriptEntry(self.scheduleId) --關閉執行
@@ -78,12 +79,13 @@ function meta:Show(args1,args2)
         end
     end, 3, false)
 
-    local list = {}
+    self.list = {}
     for i = 1 , 100 do
-        table.insert(list,i)
+        table.insert(self.list,i)
     end
 
-    self:upListScorview(list)
+    self:upListScorview(self.list)
+    self:getChild("ScrollView"):SetHeadRow(1)
 
     self:initUI(50)
 
@@ -147,9 +149,9 @@ end
 
 function meta:upListScorview( list )
     local scrollView = self:getChild("ScrollView")
-     self.hon_list_view_node:Show( #list, function (cur_row, item_node)
-        local info = list[cur_row]
-        self:setItems(cur_row,item_node)
+     self.hon_list_view_node:Show( #self.list, function (cur_row, item_node)
+        local info = self.list[cur_row]
+        self:setItems(cur_row,item_node,info)
         item_node:setPositionX(scrollView:getContentSize().width / 2)
         -- item_node:AddClick(function ()
         --     achievement_logic:ReqAchievementReward(info.id)
@@ -157,10 +159,10 @@ function meta:upListScorview( list )
     end)
 end
 
-function meta:setItems( cur_row,item_node )
+function meta:setItems( cur_row,item_node ,info)
     item_node:setVisible(true)
-    -- print("cur_row",cur_row,tolua.type(item_node))
-    item_node:getChild("txt"):setString(cur_row)
+    print("cur_row",info,tolua.type(item_node))
+    item_node:getChild("txt"):setString(info)
 end
 
 function meta:Hide()
