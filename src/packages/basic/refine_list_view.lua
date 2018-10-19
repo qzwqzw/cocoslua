@@ -16,6 +16,7 @@ function meta:Init(max_row, item_height, create_item_func)
     self.sub_item_panel = {}
     self.size = self:getContentSize()
     self.item_height = item_height
+    self.cur_row = 1
     self.max_row = max_row
 
     local inner_container = self:getInnerContainer()
@@ -158,11 +159,11 @@ function meta:SetHeadRow(cur_row)
     local inner_height = self.inner_size.height
     local index = 1
     local item_height = self.item_height
-
-    for i = cur_row, math.min(cur_row + self.max_row - 1, self.total_row) do
-        self:SetItemInfo(index, i)
+    for i = 1, math.min(self.total_row, self.max_row) do
+        self:SetItemInfo(index, cur_row + i - 1)
         index = index + 1
     end
+        self:jumpToPercentVertical(cur_row/self.total_row)
 
     -- 设置显示窗口
     local cur_yy = inner_height - (cur_row * item_height - item_height)
@@ -188,13 +189,17 @@ function meta:Show(total_row, update_func)
         end
     end
 
-    -- if self.total_row > 4 then
-    --     self:setTouchEnabled(true)
-    -- else
-    --     self:setTouchEnabled(false)
-    -- end
-
-    self:SetHeadRow(1)
+    if self.total_row > 4 then
+        self:setTouchEnabled(true)
+    else
+        self:setTouchEnabled(false)
+    end
+    -- print("#############################")
+    if self.cur_row ~= 1 then
+        self:SetHeadRow(self.cur_row)
+    else
+        self:SetHeadRow(1)
+    end
 
     self:getInnerContainer():setContentSize(self.inner_size)
 end

@@ -2,7 +2,7 @@
 local meta = class("loginView",function ()
     return require("login.index").create().root
 end)
-local MAX_ROW,SUB_PANEL_HEIGHT = 10,60
+local MAX_ROW,SUB_PANEL_HEIGHT = 8,60
 
 local graphic = require ("utils.graphic")
 function meta:ctor()
@@ -10,8 +10,8 @@ function meta:ctor()
     self:getChild("btn","txt"):setString("ggggggggggggggggggggggg")
 
     self.listView = self:getChild("ListView")
-    self:setScorllView()
     self:registEventFun()
+    self:setScorllView()
 end
 
 function meta:setScorllView( ... )
@@ -53,12 +53,30 @@ function meta:Show(args1,args2)
 
         --  self.listView:upList(arr)
          -- self:initUI(7)
-         local list = {}
-        for i = 1 , 5 do
+        --  local list = {}
+        -- for i = 1 , 200 do
+        --     table.insert(list,i)
+        -- end
+        -- -- self.hon_list_view_node:CleanItemInfo()
+        -- -- self.hon_list_view_node:RemoveAllItem()
+        -- self:upListScorview(list)
+    end,5)
+
+    self.scheduleId = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function (...) --
+        local list = {}
+        for i = 1 , 200 do
             table.insert(list,i)
         end
+        -- self.hon_list_view_node:CleanItemInfo()
+        -- self.hon_list_view_node:RemoveAllItem()
+        -- self:setScorllView()
         self:upListScorview(list)
-    end,5)
+
+        if self.scheduleId then
+            cc.Director:getInstance():getScheduler():unscheduleScriptEntry(self.scheduleId) --關閉執行
+            self.scheduleId = nil
+        end
+    end, 3, false)
 
     local list = {}
     for i = 1 , 100 do
@@ -69,7 +87,7 @@ function meta:Show(args1,args2)
 
     self:initUI(50)
 
-    self:nodegird()
+    -- self:nodegird()
     -- print("sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",tolua.type(parent))
 
     -- createTileDemoLayer()
@@ -140,124 +158,18 @@ function meta:upListScorview( list )
 end
 
 function meta:setItems( cur_row,item_node )
-    print("cur_row",cur_row,tolua.type(item_node))
+    item_node:setVisible(true)
+    -- print("cur_row",cur_row,tolua.type(item_node))
+    item_node:getChild("txt"):setString(cur_row)
 end
 
 function meta:Hide()
     self:getChild("btn","txt"):setString("ssssssssssssssssssss")
     self:setVisible(false)
+     if self.scheduleId then
+        cc.Director:getInstance():getScheduler():unscheduleScriptEntry(self.scheduleId) --關閉執行
+        self.scheduleId = nil
+    end
 end
 
-
--- local function createTileDemoLayer(title, subtitle)
---     Helper.index = 1
---     Helper.createFunctionTable = {
---         TMXIsoZorder,
---         TMXOrthoZorder,
---         TMXIsoVertexZ,
---         TMXOrthoVertexZ,
---         TMXOrthoTest,
---         TMXOrthoTest2,
---         TMXOrthoTest3,
---         TMXOrthoTest4,
---         TMXIsoTest,
---         TMXIsoTest1,
---         TMXIsoTest2,
---         TMXUncompressedTest,
---      -- TMXHexTest,
---         TMXReadWriteTest,
---         TMXTilesetTest,
---         TMXOrthoObjectsTest,
---         TMXIsoObjectsTest,
---         TMXResizeTest,
---         TMXIsoMoveLayer,
---         TMXOrthoMoveLayer,
---         TMXOrthoFlipTest,
---         TMXOrthoFlipRunTimeTest,
---         TMXOrthoFromXMLTest,
---         TMXOrthoXMLFormatTest,
---      -- TileMapTest,
---      -- TileMapEditTest,
---         TMXBug987,
---         TMXBug787,
---      -- TMXGIDObjectsTestNew,
---     }
---     self:addChild(TMXIsoZorder())
---     -- self:addChild(CreateBackMenuItem())
---     local layer = cc.Layer:create()
---     Helper.initWithLayer(layer)
---     local titleStr = title == nil and "No title" or title
---     local subTitleStr = subtitle  == nil and "drag the screen" or subtitle
---     Helper.titleLabel:setString(titleStr)
---     Helper.subtitleLabel:setString(subTitleStr)
-
---     local function onTouchesMoved(touches, event )
---         local diff = touches[1]:getDelta()
---         local node = layer:getChildByTag(kTagTileMap)
---         local currentPosX, currentPosY= node:getPosition()
---         node:setPosition(cc.p(currentPosX + diff.x, currentPosY + diff.y))
---     end
-
---     local listener = cc.EventListenerTouchAllAtOnce:create()
---     listener:registerScriptHandler(onTouchesMoved,cc.Handler.EVENT_TOUCHES_MOVED )
---     local eventDispatcher = layer:getEventDispatcher()
---     eventDispatcher:addEventListenerWithSceneGraphPriority(listener, layer)
-
---     return layer
--- end
-
--- local function TMXIsoZorder()
---     local m_tamara = nil
---     local ret = createTileDemoLayer("TMX Iso Zorder", "Sprite should hide behind the trees")
---     local map = ccexp.TMXTiledMap:create("TileMaps/iso-test-zorder.tmx")
---     ret:addChild(map, 0, kTagTileMap)
-
---     local s = map:getContentSize()
---     cclog("ContentSize: %f, %f", s.width,s.height)
---     map:setPosition(cc.p(-s.width/2,0))
-
---     m_tamara = cc.Sprite:create("particle_texture.png")
---     map:addChild(m_tamara, table.getn(map:getChildren()))
---     m_tamara:retain()
---     local mapWidth = map:getMapSize().width * map:getTileSize().width
---     m_tamara:setPosition(CC_POINT_PIXELS_TO_POINTS(cc.p( mapWidth/2,0)))
---     m_tamara:setAnchorPoint(cc.p(0.5,0))
-
---     local  move = cc.MoveBy:create(10, cc.p(300,250))
---     local  back = move:reverse()
---     local  seq = cc.Sequence:create(move, back)
---     m_tamara:runAction( cc.RepeatForever:create(seq) )
-
---     local function repositionSprite(dt)
---         local p = cc.p(m_tamara:getPosition())
---         p = CC_POINT_POINTS_TO_PIXELS(p)
---         local map = ret:getChildByTag(kTagTileMap)
-
---         -- there are only 4 layers. (grass and 3 trees layers)
---         -- if tamara < 48, z=4
---         -- if tamara < 96, z=3
---         -- if tamara < 144,z=2
-
---         local newZ = 4 - (p.y / 48)
---         newZ = math.max(newZ,0)
-
---         map:reorderChild(m_tamara, newZ)
---     end
-
---     local schedulerEntry = nil
---     local function onNodeEvent(event)
---         if event == "enter" then
---             schedulerEntry = scheduler:scheduleScriptFunc(repositionSprite, 0, false)
---         elseif event == "exit" then
---             if m_tamara ~= nil then
---                 m_tamara:release()
---             end
---             scheduler:unscheduleScriptEntry(schedulerEntry)
---         end
---     end
-
---     ret:registerScriptHandler(onNodeEvent)
-
---     return ret
--- end
 return meta

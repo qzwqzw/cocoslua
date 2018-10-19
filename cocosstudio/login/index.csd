@@ -309,7 +309,7 @@
             <FileData Type="Normal" Path="particle_texture.plist" Plist="" />
             <BlendFunc Src="774" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="gradNode" ActionTag="941984146" Tag="33" IconVisible="False" LeftMargin="-106.5109" RightMargin="-853.4891" TopMargin="-926.1869" BottomMargin="286.1869" ctype="SpriteObjectData">
+          <AbstractNodeData Name="gradNode" Visible="False" ActionTag="941984146" VisibleForFrame="False" Tag="33" IconVisible="False" LeftMargin="-106.5109" RightMargin="-853.4891" TopMargin="-926.1869" BottomMargin="286.1869" ctype="SpriteObjectData">
             <Size X="960.0000" Y="640.0000" />
             <Children>
               <AbstractNodeData Name="anim" ActionTag="63497298" Tag="33" IconVisible="True" LeftMargin="450.2816" RightMargin="509.7184" TopMargin="337.0629" BottomMargin="302.9371" IsLoop="True" IsAutoPlay="True" CurrentAnimationName="walk" ctype="ArmatureNodeObjectData">
@@ -342,16 +342,6 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="HelloWorld.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Map_1" ActionTag="460128623" Tag="35" IconVisible="False" LeftMargin="-640.5570" RightMargin="-1279.4430" TopMargin="-1067.5769" BottomMargin="107.5770" ctype="GameMapObjectData">
-            <Size X="1920.0000" Y="960.0000" />
-            <AnchorPoint />
-            <Position X="-640.5570" Y="107.5770" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
-            <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="TileMaps/iso-test-zorder.tmx" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
