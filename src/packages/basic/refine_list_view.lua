@@ -155,6 +155,7 @@ end
 -- 设置第一行显示
 -- @cur_row 真实行数
 function meta:SetHeadRow(cur_row)
+    print("################",cur_row)
     self.cur_row = cur_row
     local inner_height = self.inner_size.height
     local index = 1
@@ -163,7 +164,10 @@ function meta:SetHeadRow(cur_row)
         self:SetItemInfo(index, cur_row + i - 1)
         index = index + 1
     end
-        self:jumpToPercentVertical(cur_row/self.total_row)
+
+
+    self:jumpToPercentVertical((cur_row - 1)/self.total_row)
+
 
     -- 设置显示窗口
     local cur_yy = inner_height - (cur_row * item_height - item_height)
@@ -194,9 +198,11 @@ function meta:Show(total_row, update_func)
     else
         self:setTouchEnabled(false)
     end
-    -- print("#############################")
-    if self.cur_row ~= 1 then
+
+    if self.cur_row ~= 1 and self.cur_row + self.max_row < self.total_row  then
         self:SetHeadRow(self.cur_row)
+    elseif self.cur_row + self.max_row >= self.total_row  and self.total_row - self.max_row + 1 > 0 then
+        self:SetHeadRow(self.total_row - self.max_row + 1)
     else
         self:SetHeadRow(1)
     end
@@ -223,6 +229,12 @@ end
 function meta:SetContentSize(size)
     self.size = size
     self:setContentSize(size)
+end
+
+function meta:scrollToVertical(index,time)  --
+    time = time/100
+    local per = index/self.total_row
+    self:scrollToPercentVertical(per * 100,math.abs(index - self.cur_row ) * time,true)
 end
 
 function meta:updateItemData( )

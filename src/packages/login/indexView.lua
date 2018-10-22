@@ -64,14 +64,14 @@ function meta:Show(args1,args2)
 
     self.scheduleId = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function (...) --
         self.list = {}
-        for i = 100 , 199 do
+        for i = 1 , 50 do
             table.insert(self.list,i)
         end
-        dump(self.list)
         -- self.hon_list_view_node:CleanItemInfo()
         -- self.hon_list_view_node:RemoveAllItem()
         -- self:setScorllView()
-        self:getChild("ScrollView"):updateItemData()
+        -- self:getChild("ScrollView"):updateItemData()
+        self:upListScorview(self.list)
 
         if self.scheduleId then
             cc.Director:getInstance():getScheduler():unscheduleScriptEntry(self.scheduleId) --關閉執行
@@ -85,14 +85,42 @@ function meta:Show(args1,args2)
     end
 
     self:upListScorview(self.list)
-    self:getChild("ScrollView"):SetHeadRow(1)
-
-    self:initUI(50)
+    -- self:getChild("ScrollView"):scrollToVertical(50,2)
 
     -- self:nodegird()
     -- print("sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss",tolua.type(parent))
 
     -- createTileDemoLayer()
+    self.getnode = function ( self )
+        print(self)
+    end
+
+    self.getnode(self)
+    self:initUI(50)
+
+    -- local web = ccexp.WebView:create()
+    if device.platform ~= "windows" then
+        local webView = ccui.WebView:create()
+        self:addChild(webView)
+        webView:setScalesPageToFit(true)
+        webView:loadURL("www.baidu.com")
+        webView:setPosition(cc.p(350, 500))
+        webView:setContentSize(cc.size(750,1334))
+        webView:setVisible(true)
+
+        layout = ccui.LayoutComponent:bindLayoutComponent(webView)
+        layout:setPositionPercentX(0.4933)
+        layout:setPositionPercentY(0.2239)
+        layout:setPercentWidth(0.1042)
+        layout:setPercentHeight(0.0313)
+        layout:setSize({width = 100.0000, height = 20.0000})
+        layout:setLeftMargin(423.6015)
+        layout:setRightMargin(436.3985)
+        layout:setTopMargin(486.7240)
+        layout:setBottomMargin(133.2760)
+        self:addChild(webView)
+    end
+
 end
 
 function meta:nodegird( ... )
@@ -120,7 +148,6 @@ function meta:nodegird( ... )
 end
 
 function meta:initUI(num )
-
     local arr = {}
     for i = 1 , num do
         table.insert(arr,i)
