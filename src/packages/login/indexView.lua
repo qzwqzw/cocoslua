@@ -11,7 +11,7 @@ function meta:ctor()
 
     self.listView = self:getChild("ListView")
     self:registEventFun()
-    self:setScorllView()
+    -- self:setScorllView()
 end
 
 function meta:setScorllView( ... )
@@ -84,6 +84,7 @@ function meta:Show(args1,args2)
         table.insert(self.list,i)
     end
 
+    self:setScorllView()
     self:upListScorview(self.list)
     -- self:getChild("ScrollView"):scrollToVertical(50,2)
 
