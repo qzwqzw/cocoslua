@@ -99,8 +99,19 @@ function meta:Show(args1,args2)
     self.getnode(self)
     self:initUI(50)
 
-    -- local web = ccexp.WebView:create()
+     self:getChild("btn","txt"):setString("111111111111111111111111")
     if device.platform ~= "windows" then
+         self:getChild("btn","txt"):setString("22222222222222222222222")
+        if ccui.WebView then
+            self:getChild("btn","txt"):setString("ccui.WebView")
+        elseif cc.WebView then 
+            self:getChild("btn","txt"):setString("cc.WebView")
+        elseif cc.WebViewImpl  then
+            self:getChild("btn","txt"):setString("cc.WebViewImpl")
+        else
+            self:getChild("btn","txt"):setString("dasdasfaasdas")
+            return
+        end
         local webView = ccui.WebView:create()
         self:addChild(webView)
         webView:setScalesPageToFit(true)
