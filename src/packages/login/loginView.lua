@@ -30,9 +30,12 @@ function meta:Show(args1, args2)
     txt:setPosition(cc.p(100, 100))
     widget:addChild(txt)
     self:addChild(widget)
-    for i,v in pairs(csvInfo.tablelist["skin"]) do
-        dump(v)
-    end
+    local data1 =  csvInfo.tablelist["skin"][2]
+     -- dump(data1.skills)
+    -- local str =  assert(loadstring(data1.skills))
+    -- str = str()
+    str =  UITools.loadstring( data1.skills)  --- 执行字符串代码
+    dump(str)
 end
 
 function meta:Hide()
