@@ -64,14 +64,14 @@ function meta:Show(args1,args2)
 
     self.scheduleId = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function (...) --
         self.list = {}
-        for i = 100 , 199 do
+        for i = 100 , 150 do
             table.insert(self.list,i)
         end
-        dump(self.list)
+        -- dump(self.list)
         -- self.hon_list_view_node:CleanItemInfo()
         -- self.hon_list_view_node:RemoveAllItem()
         -- self:setScorllView()
-        self:getChild("ScrollView"):updateItemData()
+        self:getChild("ScrollView"):updateItemData2(#self.list)
 
         if self.scheduleId then
             cc.Director:getInstance():getScheduler():unscheduleScriptEntry(self.scheduleId) --關閉執行

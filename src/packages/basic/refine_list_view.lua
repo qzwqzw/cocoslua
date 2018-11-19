@@ -155,6 +155,7 @@ end
 -- 设置第一行显示
 -- @cur_row 真实行数
 function meta:SetHeadRow(cur_row)
+    print("sssssssssssssss",cur_row)
     self.cur_row = cur_row
     local inner_height = self.inner_size.height
     local index = 1
@@ -226,6 +227,20 @@ function meta:SetContentSize(size)
 end
 
 function meta:updateItemData( )
+    for i,item in ipairs(self.sub_item_panel) do
+        local update_func = self.update_func
+        if update_func then
+            update_func(self.cur_row + i - 1, item)
+        end
+    end
+end
+
+function meta:updateItemData2(total_row)
+    self.inner_size = { width = 0, height = 0}
+    self.inner_size.width = self.size.width
+    self.inner_size.height = math.max(self.size.height, total_row * self.item_height)
+
+    self:getInnerContainer():setContentSize(self.inner_size)
     for i,item in ipairs(self.sub_item_panel) do
         local update_func = self.update_func
         if update_func then
