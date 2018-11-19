@@ -7,6 +7,8 @@ require "config"
 require "cocos.init"
 cc.exports.UITools =  require "ui.UITools"
 cc.exports.commonBase = require "basic.commonBase"
+local csvInfo = require "utils.csvInfo"
+csvInfo:Init()
 
 local function main()
     require("app.MyApp"):create():run()

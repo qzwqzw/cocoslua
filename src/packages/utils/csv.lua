@@ -24,7 +24,6 @@ local function _parse_csv_line(file_name, line, key_col, keys)
     local pos = 1
     local index = 1
     local key
-
     if keys then
         local startp, endp = string.find(line, sep, pos)
         local id_text = string.sub(line, 1, startp-1)

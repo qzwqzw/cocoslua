@@ -434,6 +434,10 @@ function UITools.switch(c)
     }
     return swtbl
 end
+
+function UITools.loadstring( str ) -- 读取字符串代码
+    return assert(loadstring("return "..str))()
+end
     -- local 
     -- local node
 
