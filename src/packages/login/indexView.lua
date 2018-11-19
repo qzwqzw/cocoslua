@@ -63,15 +63,22 @@ function meta:Show(args1,args2)
     end,5)
 
     self.scheduleId = cc.Director:getInstance():getScheduler():scheduleScriptFunc(function (...) --
-        self.list = {}
-        for i = 1 , 50 do
-            table.insert(self.list,i)
-        end
+        -- self.list = {}
+        -- for i = 1 , 50 do
+        --     table.insert(self.list,i)
+        -- end
         -- self.hon_list_view_node:CleanItemInfo()
         -- self.hon_list_view_node:RemoveAllItem()
         -- self:setScorllView()
         -- self:getChild("ScrollView"):updateItemData()
-        self:upListScorview(self.list)
+        -- self:upListScorview(self.list)
+        local inner = self:getChild("ScrollView"):getInnerContainer()
+        inner:setAnchorPoint(0.5,0)
+        local size = self:getChild("ScrollView"):getInnerContainerSize()
+        local pos = self:getChild("ScrollView"):getInnerContainerPosition()
+
+        -- self:getChild("ScrollView"):setInnerContainerPosition(cc.p(pos.x,pos.y + 10000))
+        self:getChild("ScrollView"):setInnerContainerSize(cc.size(size.width,size.height + 1000))
 
         if self.scheduleId then
             cc.Director:getInstance():getScheduler():unscheduleScriptEntry(self.scheduleId) --關閉執行
@@ -99,39 +106,7 @@ function meta:Show(args1,args2)
     self.getnode(self)
     self:initUI(50)
 
-     self:getChild("btn","txt"):setString("111111111111111111111111")
-    if device.platform ~= "windows" then
-         self:getChild("btn","txt"):setString("22222222222222222222222")
-        if ccui.WebView then
-            self:getChild("btn","txt"):setString("ccui.WebView")
-        elseif cc.WebView then 
-            self:getChild("btn","txt"):setString("cc.WebView")
-        elseif cc.WebViewImpl  then
-            self:getChild("btn","txt"):setString("cc.WebViewImpl")
-        else
-            self:getChild("btn","txt"):setString("dasdasfaasdas")
-            return
-        end
-        local webView = ccui.WebView:create()
-        self:addChild(webView)
-        webView:setScalesPageToFit(true)
-        webView:loadURL("www.baidu.com")
-        webView:setPosition(cc.p(350, 500))
-        webView:setContentSize(cc.size(750,1334))
-        webView:setVisible(true)
-
-        layout = ccui.LayoutComponent:bindLayoutComponent(webView)
-        layout:setPositionPercentX(0.4933)
-        layout:setPositionPercentY(0.2239)
-        layout:setPercentWidth(0.1042)
-        layout:setPercentHeight(0.0313)
-        layout:setSize({width = 100.0000, height = 20.0000})
-        layout:setLeftMargin(423.6015)
-        layout:setRightMargin(436.3985)
-        layout:setTopMargin(486.7240)
-        layout:setBottomMargin(133.2760)
-        self:addChild(webView)
-    end
+    self:getChild("btn","txt"):setString("111111111111111111111111")
 
 end
 

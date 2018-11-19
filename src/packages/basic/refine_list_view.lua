@@ -155,7 +155,7 @@ end
 -- 设置第一行显示
 -- @cur_row 真实行数
 function meta:SetHeadRow(cur_row)
-    print("################",cur_row)
+    -- print("################",cur_row)
     self.cur_row = cur_row
     local inner_height = self.inner_size.height
     local index = 1
